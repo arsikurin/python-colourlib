@@ -1,4 +1,5 @@
-# Colourlib 
-### by arsikurin
+# Colourlib
 
-_Python terminal colour library_
+by arsikurin
+
+## On [PyPi](https://pypi.org/project/colourlib/)
