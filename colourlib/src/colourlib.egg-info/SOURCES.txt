@@ -1,0 +1,7 @@
+README.md
+setup.py
+colourlib/src/colourlib.py
+colourlib/src/colourlib.egg-info/PKG-INFO
+colourlib/src/colourlib.egg-info/SOURCES.txt
+colourlib/src/colourlib.egg-info/dependency_links.txt
+colourlib/src/colourlib.egg-info/top_level.txt

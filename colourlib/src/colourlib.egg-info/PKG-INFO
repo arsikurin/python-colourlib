@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: colourlib
+Version: 0.3.0
+Summary: Python terminal colour library
+Home-page: UNKNOWN
+Author: arsikurin
+License: UNKNOWN
+Description: # Colourlib 
+        ### by arsikurin
+        
+        _Python terminal colour library_
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
