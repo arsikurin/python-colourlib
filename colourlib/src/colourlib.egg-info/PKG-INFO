@@ -1,14 +1,15 @@
 Metadata-Version: 2.1
 Name: colourlib
-Version: 0.3.0
+Version: 0.4.1
 Summary: Python terminal colour library
 Home-page: UNKNOWN
 Author: arsikurin
 License: UNKNOWN
-Description: # Colourlib 
-        ### by arsikurin
+Description: # Colourlib
         
-        _Python terminal colour library_
+        by arsikurin
+        
+        ## On [PyPi](https://pypi.org/project/colourlib/)
 Platform: UNKNOWN
 Requires-Python: >=3.6
 Description-Content-Type: text/markdown

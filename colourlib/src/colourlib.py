@@ -16,6 +16,9 @@ class Style:
 
 
 class Fg:
+    """
+    Foreground coloured output
+    """
     Reset = "\033[0m"
     Black = "\033[30m"
     Red = "\033[31m"
@@ -36,6 +39,9 @@ class Fg:
 
 
 class Bg:
+    """
+    Background coloured output
+    """
     Reset = "\033[0m"
     Black = "\033[40m"
     Red = "\033[41m"
@@ -56,11 +62,15 @@ class Bg:
 
 
 class ControlCharacters:
+    """
+    Backslash: \\
+    Double quote: \"
+    Quote: \'
+    """
     # Backslash \\
     # Double quote \"
     # Quote \'
 
     Backspace = "\b"
     Tab = "\t"
-    Line_feed = "\n"
     Carriage_return = "\r"
