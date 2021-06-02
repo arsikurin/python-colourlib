@@ -1,6 +1,6 @@
 # Colourlib
 
-by arsikurin
+_by arsikurin_
 
 ## On [PyPi](https://pypi.org/project/colourlib/)
 

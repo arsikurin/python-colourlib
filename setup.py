@@ -1,11 +1,11 @@
 import setuptools
 
-with open("README.md", "r") as fh:
-    long_description = fh.read()
+with open("README.md", "r") as f:
+    long_description = f.read()
 
 setuptools.setup(
     name="colourlib",
-    version="0.4.3",
+    version="0.5.0",
     author="arsikurin",
     description="Python terminal colour library",
     long_description=long_description,
