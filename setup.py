@@ -5,7 +5,7 @@ with open("README.md", "r") as f:
 
 setuptools.setup(
     name="colourlib",
-    version="0.5.0",
+    version="0.5.1",
     author="arsikurin",
     description="Python terminal colour library",
     long_description=long_description,
