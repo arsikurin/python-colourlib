@@ -1,8 +1,6 @@
 import sys
 import logging as log
 
-DEBUG = False
-
 
 # Using ANSI codes
 
@@ -81,30 +79,12 @@ class ControlCharacters:
 
 
 if sys.platform == "linux":
-    if DEBUG:
-        log.basicConfig(format=f"{Fg.Green}{Style.Bold}%(asctime)s{Fg.Reset}{Style.Bold} %(message)s{Style.Reset}",
-                        level=log.DEBUG)
-    else:
-        log.basicConfig(format=f"{Fg.Green}{Style.Bold}%(asctime)s{Fg.Reset}{Style.Bold} %(message)s{Style.Reset}")
-
     log.debug("linux detected")
 
 elif sys.platform == "darwin":
-    if DEBUG:
-        log.basicConfig(format=f"{Fg.Green}{Style.Bold}%(asctime)s{Fg.Reset}{Style.Bold} %(message)s{Style.Reset}",
-                        level=log.DEBUG)
-    else:
-        log.basicConfig(format=f"{Fg.Green}{Style.Bold}%(asctime)s{Fg.Reset}{Style.Bold} %(message)s{Style.Reset}")
-
     log.debug("macos detected")
 
 elif sys.platform == "win32":
-    if DEBUG:
-        log.basicConfig(format=f"{Fg.Green}{Style.Bold}%(asctime)s{Fg.Reset}{Style.Bold} %(message)s{Style.Reset}",
-                        level=log.DEBUG)
-    else:
-        log.basicConfig(format=f"{Fg.Green}{Style.Bold}%(asctime)s{Fg.Reset}{Style.Bold} %(message)s{Style.Reset}")
-
     import ctypes
 
     kernel32 = ctypes.windll.kernel32
@@ -114,12 +94,6 @@ elif sys.platform == "win32":
 
 else:
     try:
-        if DEBUG:
-            log.basicConfig(format=f"{Fg.Green}{Style.Bold}%(asctime)s{Fg.Reset}{Style.Bold} %(message)s{Style.Reset}",
-                            level=log.DEBUG)
-        else:
-            log.basicConfig(format=f"{Fg.Green}{Style.Bold}%(asctime)s{Fg.Reset}{Style.Bold} %(message)s{Style.Reset}")
         log.critical(f"platform unknown\n{Fg.Red}No errors occurred{Fg.Reset}")
-
     except Exception as err:
         print(f"platform unknown\n{Fg.Red}{err}{Fg.Reset}")
