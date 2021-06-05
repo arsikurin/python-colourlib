@@ -1,5 +1,4 @@
 import sys
-import logging as log
 
 
 # Using ANSI codes
@@ -78,22 +77,8 @@ class ControlCharacters:
     Carriage_return = "\r"
 
 
-if sys.platform == "linux":
-    log.debug("linux detected")
-
-elif sys.platform == "darwin":
-    log.debug("macos detected")
-
-elif sys.platform == "win32":
+if sys.platform == "win32":
     import ctypes
 
     kernel32 = ctypes.windll.kernel32
     kernel32.SetConsoleMode(kernel32.GetStdHandle(-11), 7)
-
-    log.debug(f"windows detected\n{Style.Italic}enabled virtual terminal processing{Style.Reset}")
-
-else:
-    try:
-        log.critical(f"platform unknown\n{Fg.Red}No errors occurred{Fg.Reset}")
-    except Exception as err:
-        print(f"platform unknown\n{Fg.Red}{err}{Fg.Reset}")
